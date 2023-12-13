@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punchline</title>
+  </head>
+  <body>
+    <img src="data:image/png;base64,{{ image_base64 }}" alt="Logo" />
+    <img
+      class="photo"
+      src="data:image/png;base64,{{ image_base642 }}"
+      alt="Photo"
+    />
+    <h1>{{ punchline }}</h1>
+    <button>{{ button_text }}</button>
+  </body>
+  <style>
+        @page {
+        size: 702px 795px;
+        margin: 10mm;
+    }
+
+        html{
+          max-width: 702px;
+          max-height: 795px;
+        }
+        body{
+          width: 702px;
+          height: 795px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        img{
+          display: block;
+          margin-bottom: 10px;
+        }
+        .photo{
+          border-radius: 20px;
+
+        }
+
+        h1{
+          color: {{ color }};
+          width: 350px;
+        }
+
+        button{
+          box-sizing: border-box;
+          min-height: 40px;
+          outline: none;
+          border: none;
+          padding: 10px;
+          border-radius: 5px;
+          color: #fff;
+          background-color: {{ color }};
+        }
+  </style>
+</html>

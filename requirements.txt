@@ -1,0 +1,8 @@
+Flask
+joblib
+torch
+diffusers
+transformers
+ftfy
+pdf2image
+weasyprint
