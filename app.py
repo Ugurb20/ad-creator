@@ -1,6 +1,4 @@
-import io
 from flask import Flask, request, render_template_string,send_file
-import joblib
 from weasyprint import HTML
 import img_generate_inference
 import create_card
@@ -47,3 +45,5 @@ def generate_card_controller():
     
 
 
+if __name__ == '__main__':
+    app.run(debug=True, port=80)
